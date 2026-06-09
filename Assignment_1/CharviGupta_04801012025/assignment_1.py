@@ -16,7 +16,7 @@ print("simple interest is : ", simple_interest)
 #3 Temperature from celsius to fahrenheit
 celsius=float(input("Enter the temperature in celsius:"))
 fah=(celsius*9/5)+32
-print(f"Temperature in fahrenheit is : {f}")
+print(f"Temperature in fahrenheit is : {fah}")
 
 
 #4 Average of three numbers
@@ -43,7 +43,7 @@ print(f"After swap: a={a},b={b}")
 #taking student details using input()
 name=input("Enter the name:")
 age=input("Enter the age:")
-class=input("Enter the class:")
+studentclass=input("Enter the class:")
 #taking and storing marks in variables
 cs_marks=float(input("Enter your cs marks:"))
 maths_marks=float(input("Enter your maths marks:"))
@@ -51,6 +51,6 @@ english_marks=float(input("Enter your english marks:"))
 chem_marks=float(input("Enter chemistry marks:"))
 #calculating total and percentage
 total=cs_marks+maths_marks+english_marks+chem_marks
-percentage=total/5
+percentage= (total / 400)*100
 print("Total Marks= ",total)
 print("Percentage= ",percentage )
