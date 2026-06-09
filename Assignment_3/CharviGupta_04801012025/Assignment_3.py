@@ -1,5 +1,4 @@
 # Assignment 3 (Internship)
-
 # Print first 10 natural numbers
 def nat_num():
     for i in range(1, 11):
@@ -23,7 +22,7 @@ def rev_num(num):
 num = int(input("Enter Number: "))
 print("Reversed Number = ", rev_num(num))
 
-# Count Digits in a Number
+# Count digits in a number
 def counter(num):
     count = 0
     while num > 0:
@@ -33,7 +32,7 @@ def counter(num):
 num = int(input("Enter Number: "))
 print("Number of Digits = ", counter(num))
 
-# Check Palindrome Number
+# Check palindrome number
 def palindrome(num):
     og = num
     rev = 0
@@ -50,16 +49,16 @@ def palindrome(num):
 num = int(input("Enter Number: "))
 palindrome(num)
 
-# Generate Fibonacci Series
+# Generate fibonacci series
 def fibonacci(n):
     a, b = 0, 1
-  for i in range(n):
+    for i in range(n):
         print(a, end=" ")
         a, b = b, a + b
 n = int(input("\nEnter Number of Terms: "))
 fibonacci(n)
 
-# Calculator Using Functions
+# Calculator using functions
 def add(a, b):
     return a + b
 def subtract(a, b):
@@ -86,7 +85,7 @@ elif choice == 4:
 else:
     print("Invalid Choice")
 
-# Create a Text File and Store Student Details
+# Create a text file and store student details
 file = open("student.txt", "w")
 name = input("Enter Student Name: ")
 marks = input("Enter Marks: ")
@@ -95,22 +94,22 @@ file.write("Marks: " + marks)
 file.close()
 print("Student Details Saved")
 
-# Read Data from a File
+# Read data from a file
 file = open("student.txt", "r")
 data = file.read()
 print(data)
 file.close()
 
-# Handle Division by Zero Using Exception Handling
+# Handle division by zero using exception handling
 try:
     a = int(input("Enter First Number: "))
     b = int(input("Enter Second Number: "))
-  result = a / b
+    result = a / b
     print("Result =", result)
 except ZeroDivisionError:
     print("Cannot Divide by Zero")
 
-# Create a Student Class with Name and Marks
+# Create a student class with name and marks
 class Student:
     def __init__(self, name, marks):
         self.name = name
