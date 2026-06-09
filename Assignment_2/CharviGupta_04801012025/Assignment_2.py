@@ -1,7 +1,6 @@
 #Assignment 2 (Internship)
-
 # Sum of first ten natural numbers
-total=sum(range(1,11))
+total = sum(range(1,11))
 print(f"Sum of first ten natural numbers is: {total}")
 
 # Factorial of a number
@@ -12,7 +11,7 @@ if num<0:
 elif num==0:
     print("Factorial of 0 is 1.")
 else:
-    for i in range(1,n+1):
+    for i in range(1, num + 1):
         factorial=factorial*i
     print(f"Factorial of {num} is {factorial}")
 
@@ -48,20 +47,20 @@ phy_marks=float(input("Enter physics marks:"))
 chem_marks=float(input("Enter chemistry marks:"))
 
 total=cs_marks+beee_marks+phy_marks+chem_marks
-percentage=total/5
+percentage=(total/400)*100
 print("Percentage=",percentage)
 
-if p>=93:
+if percentage>=93:
     grade="A+"
-elif p>=85 and p<93:
+elif percentage>=85 and p<93:
     grade="A"
-elif p>=77 and p<85:
+elif percentage>=77 and p<85:
     grade="B+"
-elif p>=69 and p<77:
+elif percentage>=69 and p<77:
     grade="B"
-elif p>=61 and p<69:
+elif percentage>=61 and p<69:
     grade="C"
-elif p>=53 and p<61:
+elif percentage>=53 and p<61:
     grade="D"
 else:
     grade="F"
